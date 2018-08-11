@@ -5,62 +5,64 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="img/logo.jpg" alt="Нёрдс">
+    <header class="main-header">
+      <div class="main-logo">
+        <img class="top-logo" src="img/main-logo.jpg" alt="Нёрдс">
 	  </div>
-    <nav>
-      <ul>
-        <li>
+    <nav class="main-nav">
+      <ul class="site-navigation">
+        <li class="site-navigation">
           <a href="#">Студия</a>
         </li>
-          <li>
+          <li class="site-navigation">
             <a href="#">Клиенты</a>
           </li>
-          <li>
+          <li class="site-navigation">
             <a href="catalog.html">Магазин</a>
           </li>
-          <li>
+          <li class="site-navigation">
             <a href="#">Контакты</a>
           </li> 
         </ul>
 	  </nav>
-		<div class="shoping-box">
-		  <a class="shopping-cart" href="#">Корзина</a>
-		</div>
-      <div class="page-title">
-        <h1>Магазин готовых шаблонов</h1>
-      </div>
+        <div class="shoping-box">
+		  <ul class="user-navigation">
+            <li class="user-navigation-list"><a href="#">Корзина</a></li>
+          </ul>
+        </div>
     </header>
-    <main>
+    <main class="conteiner">
+       <div class="page-title">
+          <h1 class="page-title-main">Магазин готовых шаблонов</h1>
+        </div>
       <div class="selection-form">
-        <aside>
+        <aside class="main-form">
           <!--Здесь начинается форма выбора-->
-          <form>
+          <form class="form">
             
           </form>
           <!--Здесь заканчивается форма выбора-->
         </aside>
-        <div class="selecton-sorting">
+        <div class="sorting-selecton">
           <div class="sorting-label">
-            <h2>Сортировать</h2>
+            <h2 class="sorting-title">Сортировать</h2>
           </div>
           <div class="selection-type">
-            <ul>
+            <ul class="selection-list">
               <li>
-                <a href="#">по цене</a>
+                <a class="selection-link" href="#">по цене</a>
               </li>
               <li>
-                <a href="#">по типу</a>
+                <a class="selection-link" href="#">по типу</a>
               </li>
               <li>
-                <a href="#">по названию</a>
+                <a class="selection-link" href="#">по названию</a>
               </li>
             </ul>
           </div>
           <!--Нашел на форумах вот такой образец переключателя сортировки уточнить правильно ли??-->
           <div class="sorting-up-or-down">
-            <ul>
+            <ul class="sorting-up-down-list">
               <li>
                 <a class="sorting-up" href="#">&#11014;</a>
               </li>
@@ -74,7 +76,7 @@
           <div class="cards-item">
             <div class="rings">
               <!-- пробуем применить этот же переключатель с кружочками-->
-              <ul>
+              <ul class="sorting-next-list">
                 <li><a href="#">&#10102;</a></li>
                 <li><a href="#">&#10103;</a></li>
                 <li><a href="#">&#10104;</a></li>
@@ -91,7 +93,7 @@
           </div>
              <div class="cards-item">
             <div class="rings">
-              <ul>
+              <ul class="sorting-next-list">
                 <li><a href="#">&#10102;</a></li>
                 <li><a href="#">&#10103;</a></li>
                 <li><a href="#">&#10104;</a></li>
@@ -109,7 +111,7 @@
              <div class="cards-item">
             <div class="rings">
               <!-- пробуем применить этот же переключатель с кружочками-->
-              <ul>
+              <ul class="sorting-next-list">
                 <li><a href="#">&#10102;</a></li>
                 <li><a href="#">&#10103;</a></li>
                 <li><a href="#">&#10104;</a></li>
@@ -127,7 +129,7 @@
              <div class="cards-item">
             <div class="rings">
               <!-- пробуем применить этот же переключатель с кружочками-->
-              <ul>
+              <ul class="sorting-next-list">
                 <li><a href="#">&#10102;</a></li>
                 <li><a href="#">&#10103;</a></li>
                 <li><a href="#">&#10104;</a></li>
@@ -145,7 +147,7 @@
              <div class="cards-item">
             <div class="rings">
               <!-- пробуем применить этот же переключатель с кружочками-->
-              <ul>
+              <ul class="sorting-next-list">
                 <li><a href="#">&#10102;</a></li>
                 <li><a href="#">&#10103;</a></li>
                 <li><a href="#">&#10104;</a></li>
@@ -163,7 +165,7 @@
              <div class="cards-item">
             <div class="rings">
               <!-- пробуем применить этот же переключатель с кружочками-->
-              <ul>
+              <ul class="sorting-next-list">
                 <li><a href="#">&#10102;</a></li>
                 <li><a href="#">&#10103;</a></li>
                 <li><a href="#">&#10104;</a></li>
@@ -200,12 +202,14 @@
           <a href="#">Напишите нам</a>
         </div>
       </div> 
-    <footer>
-      <div class="footer">
+    <footer class="main-footer">
+      <div class="social">
         <div class="social-btn">
-          <a href="#" class="social-btn social-btn-vk">ВКонакте</a>
-          <a href="#" class="social-btn social-btn-fb">Facebook</a>
-          <a href="#" class="social-btn social-btn-ins">Instagramm</a>
+          <ul>
+            <li><a class="social-btn social-btn-vk" href="#">ВКонакте</a></li>
+            <li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
+            <li><a class="social-btn social-btn-ins" href="#">Instagramm</a></li>
+          </ul>
         </div>
         <div class="action">
           <p class="friendship"><b>Давайте дружить, это выгодно!</b></p>

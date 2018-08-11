@@ -5,32 +5,34 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="img/logo.jpg" alt="Нёрдс">
+    <header class="main-header">
+      <div class="main-logo">
+        <img class="top-logo" src="img/main-logo.jpg" alt="Нёрдс">
 	  </div>
-    <nav>
-      <ul>
-        <li>
+    <nav class="main-nav">
+      <ul class="site-navigation">
+        <li class="site-navigation-list">
           <a href="#">Студия</a>
         </li>
-          <li>
+          <li class="site-navigation-list">
             <a href="#">Клиенты</a>
           </li>
-          <li>
+          <li class="site-navigation-list">
             <a href="catalog.html">Магазин</a>
           </li>
-          <li>
+          <li class="site-navigation-list">
             <a href="#">Контакты</a>
           </li> 
         </ul>
 	  </nav>
-		<div class="shoping-box">
-		  <a class="shopping-cart" href="#">Корзина</a>
-		</div>
-      <div class="title-none">
+        <div class="shoping-box">
+		  <ul class="user-navigation">
+            <li class="user-navigation-list"><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+      <div class="page-title">
         <!--Этот заголовок позже будет скрыт стилями-->
-        <h1>Нёрдс - дизайн студия из Краснодара</h1>
+        <h1 class="visually-hidden">Нёрдс - дизайн студия из Краснодара</h1>
       </div>
         <!--Здесь начнётся слайдер -->
       <div class="slider">
@@ -49,28 +51,28 @@
           <p>Работать днём как все? Мы против этого. Ближе к полночи работа только начинается</p>
           <a class="btn slider-btn" href="#">узнать больше</a>
         </div>
-      </div>
-        <!--Здесь закончиться слайдер -->
+        </div>
+          <!--Здесь закончиться слайдер -->
 	  </header>
-	  <main>
-        <section class="advantages">
-          <div class="advantages-item">
-            <img src="img/web-sites.jpg" alt="Веб-сайты">
-            <h2>Веб-сайты</h2>
+	  <main class="conteiner">
+        <section class="Our service">
+          <div class="servise-item">
+            <img class="servise-item-red" src="img/web-sites.jpg" alt="Веб-сайты">
+            <h2 class="servise-title">Веб-сайты</h2>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="btn btn-advantages-red" href="#">Заказать</a>
+            <a class="btn btn-service-red" href="#">Заказать</a>
           </div>
 		  <div class="service-item">
-          <img src="img/applications.jpg" alt="Приложения">
-            <h2>Приложения</h2>
+            <img class="servise-item-green" src="img/applications.jpg" alt="Приложения">
+            <h2 class="servise-title">Приложения</h2>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="btn advantages-btn-green" href="#">Заказать</a>
+            <a class="btn btn-service-green" href="#">Заказать</a>
           </div>
           <div class="service-item">
-          <img src="img/presentation.jpg" alt="Призентации">
-            <h2>Призентации</h2>
+            <img class="servise-item-yellow" src="img/presentation.jpg" alt="Призентации">
+            <h2 class="servise-title">Призентации</h2>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="btn advantages-btn-yellow" href="#">Заказать</a>
+            <a class="btn btn-service-yellow" href="#">Заказать</a>
           </div>
         </section>
           <div class="studio-info">
@@ -78,18 +80,18 @@
             <p>Исповедуем принципы минимализма и чистоты.
                   Ставим математический рсчёт превыше креатива. Работаем не покладая рук,
                   как роботы</p>
-            <h3>Выполняем заказы на разработку:</h3>
-              <ul>
-                <li>Веб сайтов дюбой сложности</li>
-                <li>Мобильных приложений для IOS и Android</li>
-                <li>Слайдшоу и видео для корпоративныъх презентаций</li>  
+            <h3 class="studio-info-label">Выполняем заказы на разработку:</h3>
+              <ul class="studio-info-service">
+                <li class="studio-service">Веб сайтов любой сложности</li>
+                <li class="studio-service">Мобильных приложений для IOS и Android</li>
+                <li class="studio-service">Слайдшоу и видео для корпоративныъх презентаций</li>  
               </ul>
            </div>
              <div class="features">
                <div class="big-logo">
-                 <img src="img/big-logo.jpg" alt="нёрдс">
+                 <img class="big-logo-neards" src="img/big-logo.jpg" alt="нёрдс">
                </div>
-                 <h3>с 2004года любим точность во всём</h3>
+                 <h3 class="title-feautures">с 2004года любим точность во всём</h3>
                <div class="features-item">
                  <span class="feauteres-percent">146<sup>%</sup></span>
                  <p>Уровень самоотдачи</p>
@@ -105,22 +107,22 @@
             </div>
             <div class="clients">
               <div class="clients-item">
-                <a href="#">
+                <a class="Academy" href="#">
                   <img src="img/logo-academy.jpg" alt="HTML Academy">
                 </a>
               </div>
-              <div>
-                <a href="#">
+              <div class="clients-item">
+                <a class="Barbershop" href="#">
                   <img src="img/logo-borodinski" alt="Barbershop Borodinski">
                 </a>
               </div>
-              <div>
-                <a href="#">
+              <div class="clients-item">
+                <a class="Pink" href="#">
                   <img src="img/logo-pink" alt="Pink">
                 </a>
               </div>
-              <div>
-                <a href="#">
+              <div class="clients-item">
+                <a class="Mishka" href="#">
                   <img src="img/logo-mishka" alt="Mishka">
                 </a>
               </div>
@@ -131,19 +133,21 @@
       </div>
       <div class="modal-content">
         <!--Здесь будет всплывающее окно-->
-        <h2>NEARDS DESIGN STUDIO</h2>
+        <h2 class="titel-modal">NEARDS DESIGN STUDIO</h2>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
         <p>тел. +7(812)275-75-75</p>
         <div class="write-us">
           <a href="#">Напишите нам</a>
         </div>
       </div> 
-    <footer>
-      <div class="footer">
+    <footer class="main-footer">
+      <div class="social">
         <div class="social-btn">
-          <a href="#" class="social-btn social-btn-vk">ВКонакте</a>
-          <a href="#" class="social-btn social-btn-fb">Facebook</a>
-          <a href="#" class="social-btn social-btn-ins">Instagramm</a>
+          <ul>
+            <li><a class="social-btn social-btn-vk" href="#">ВКонакте</a></li>
+            <li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
+            <li><a class="social-btn social-btn-ins" href="#">Instagramm</a></li>
+          </ul>
         </div>
         <div class="action">
           <p class="friendship"><b>Давайте дружить, это выгодно!</b></p>
