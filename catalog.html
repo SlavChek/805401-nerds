@@ -7,31 +7,29 @@
   <body>
     <header class="main-header">
       <div class="main-logo">
-        <a class="top-logo-link" href="index.html">
-          <img class="top-logo" src="img/nerds-logo.svg" alt="Нёрдс" width="160" height="65">
-        </a>
+        <a href="index.html" aria-label="Переход на главную страницу"><img class="top-logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии нрёрдс" width="160" height="65" ></a>
 	  </div>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Основное меню навигации">
       <ul class="site-navigation">
-        <li class="site-navigation">
+        <li class="site-navigation-list">
           <a href="#">Студия</a>
         </li>
-        <li class="site-navigation">
-          <a href="#">Клиенты</a>
-        </li>
-        <li class="site-navigation">
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li class="site-navigation">
-          <a href="#">Контакты</a>
-        </li> 
-      </ul>
-    </nav>
-      <div class="shoping-box">
-		<ul class="user-navigation">
-          <li class="user-navigation-list"><a href="#">Корзина</a></li>
+          <li class="site-navigation-list">
+            <a href="#">Клиенты</a>
+          </li>
+          <li class="site-navigation-list">
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li class="site-navigation-list">
+            <a href="#">Контакты</a>
+          </li> 
         </ul>
-      </div>
+	  </nav>
+        <div class="shoping-box">
+		  <ul class="user-navigation">
+            <li class="user-navigation-list"><a href="#" aria-label="корзина с вашими покупками">Корзина</a></li>
+          </ul>
+        </div>
     </header>
     <main class="container">
       <div class="page-title">
@@ -40,9 +38,9 @@
       <div class="selection-form">
         <aside class="main-form">
           <!--Здесь начинается форма выбора-->
-          <form class="form">
-            
-          </form>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          
+        </form>
           <!--Здесь заканчивается форма выбора-->
         </aside>
         
@@ -193,20 +191,32 @@
            </div>
          </main>
          <div class="contacts-map">
-           <!--Здесь будет карта-->
-           <!--Я думаю что карту лучше задать фоном так как адрес всё равно дублируеться снизу 
-               и если пользователь её не увидет ничего страшного не произайдет??
-           <img class="content-map" src="img/map-img.jpg" alt="Карта" width="1440" height="416">-->
-         </div>
-         <div class="modal-content">
-           <!--Здесь будет всплывающее окно-->
-           <h2>NEARDS DESIGN STUDIO</h2>
-           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
-           <p>тел. +7(812)275-75-75</p>
-         <div class="write-us">
-           <a href="#">Напишите нам</a>
-         </div>
-       </div> 
+           <img class="content-map" src="img/map-img.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1440" height="416">
+      </div>
+    <div class="our-adress">
+      <h2 class="titel-modal">NEARDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
+        <p>тел. +7(812)275-75-75</p>
+      <div class="write-us">
+        <a href="#">Напишите нам</a>
+      </div>
+    </div>
+      <div class="appointment-info">
+        <h2>Напишите нам</h2>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="last-first-name" value="" placeholder="Имя Фамилия">
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" type="email" name="email-adress" value="" placeholder="email@example.com">
+          </p>
+          <p class="appointment-item">
+            <label for="mail-1">Текст письма:</label><br>
+            <textarea id="mail-1" name="mail" placeholder="В свободной форме" rows="10" cols="50" ></textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form> 
+      </div> 
      <footer class="main-footer">
        <div class="social">
          <div class="social-btn">
