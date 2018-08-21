@@ -3,7 +3,7 @@ body {
   padding:  0;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: normal;
   color:#283136;
   background-color: #ffffff;
@@ -28,15 +28,12 @@ a{
 
 .main-nav {
   font-size: 17.5px;
-  line-height: 1.8;
+  line-height: 31.5px;
   font-weight: 500;
   color: #000000;
   background-color: #e1e1e1;
 }
 
-.main-container{
-
-}
 
 .site-navigation,
 .user-navigation {
@@ -66,25 +63,60 @@ a{
   
 }*/
 
+.slider-text-big{
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 54px;
+  color: #000000;
+}
+
+.slider-link{
+  display: table-cell;
+  width: 240px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+.slider-btn{
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.slider-btn:hover{
+  color: #ffffff;
+  background-color: #e74246;
+}
+
+.slider-btn:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+.main-container{
+margin-top:10px;
+}
+
+.service-item{
+  margin-bottom: 10px;
+}
 
 .servise-title{
-  font-size: 24.5;
+  font-size: 24.5px;
   font-weight: bold;
-  line-height: 1.29;
+  line-height: 31.5px;
   color:#000000;
 }
 
 .btn{
-  display: inline-block;
+  display: table-cell;
   width:160px;
   height: 50px;
   color:#ffffff;
   text-align: center;
-  
-}
-
-.our-service{
-  display:inline-block;
+  border-radius: 3px;
+  vertical-align: middle;
   
 }
 
@@ -96,7 +128,7 @@ a{
 }
 
 .btn-service-red:active{
-  background-color:#d7373b; 
+  background-color:#d7373b;
 }
 
 .btn-service-green{
@@ -127,20 +159,155 @@ a{
  
 }
 
+.service-link:hover{
+  color:#ffffff;
+ 
+}
+
+.service-link:active{
+  color:rgba(255, 255, 255, 0.3);
+ 
+}
+
 .studio-info-title b{
   font-size:45.5px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 45.5px;
   color: #000000;
 }
 
 .studio-info-label{
-  font-size: 16px;
   font-weight: bold;
-  line-height: 24px;
   color: #000000;
   
 }
+
+.studio-info-service{
+  list-style:none;
+  
+}
+
+.features {
+  line-height: 18px;
+}
+
+.title-feautures {
+  font-weight: bold;
+  color: #000000;
+}
+
+.feauteres-percent{
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: bold;
+  color:#000000;
+}
+
+.features-item{
+  line-height: 18px;
+  color: #283136;
+}
+.long-line {
+  width: 1440px;
+  border:solid 2px;
+  opacity: 0.2;
+}
+
+.client{
+  opacity: 0.2;
+}
+.client:hover{
+  opacity: 1;
+}
+.client:active{
+  opacity: 0.1;
+}
+.form-title{
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color:#000000;
+}
+
+.appointment-form{
+  font-size: 17.5px;
+  font-weight: bold;
+  line-height: 17.5px;
+  color:#000000;
+}
+
+.appointment-form input {
+  border: solid 2px #d7dcde;
+}
+
+.appointment-form textarea{
+  border: solid 2px #d7dcde;
+}
+
+.write-us-btn{
+  display: table-cell;
+  width: 219px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: #fb565a;
+}
+
+.write-us{
+  color: #ffffff;
+}
+
+.our-adress{
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.title-modal{
+  font-size: 17.5px;
+  font-weight: bold;
+  line-height: 31.5px;
+  color: #000000;
+}
+
+.modal-close{
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/close-cross.svg) no-repeat;
+  opacity: 0.3;
+}
+
+.form-button{
+  width: 260px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #fb565a;
+  border:0px;
+  border-radius:3px;
+}
+
+.social-button{
+  list-style: none;  
+}
+
+.social-btn{
+color: #000000;
+}
+
+.action{
+  line-height: 22px;
+  color:#444444;
+}
+.frindship{
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 35;
+  color: #000000;
+}
+
+
+
 
 
 
