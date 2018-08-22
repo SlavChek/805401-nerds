@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="css/normolize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -38,9 +41,9 @@
       <div class="selection-form">
         <aside class="main-form">
           <!--Здесь начинается форма выбора-->
-          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value" aria-label="Форма выбора пораметров заказа">
-            <div class="form-label">
-              <h2>Стоимость:</h2>
+          <form class="form-switch" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value" aria-label="Форма выбора пораметров заказа">
+            <div class="">
+              <h2 class="form-title-switch price-title">Стоимость:</h2>
             </div>
             <div class="range-select">
               <div class="half-width">
@@ -51,8 +54,8 @@
                 <span class="range-label">до</span>
               </div>
             </div>
-              <div class="form-label">
-                <h2>Сетка:</h2>
+              <div class="">
+                <h2 class="form-title-switch">Сетка:</h2>
               </div> 
               <div class="radio-select">
                 <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
@@ -62,8 +65,8 @@
                 <input type="radio" name="grid" id="fixed" value="fixed">
                 <label for="fixed">Фиксированния</label>
               </div>
-              <div class="form-label">
-                <h2>Особенности:</h2>
+              <div class="">
+                <h2 class="form-title-switch">Особенности:</h2>
               </div>
               <div class="chekbox-select">
                 <input type="checkbox" name="slider" id="slider" checked>
@@ -78,7 +81,7 @@
                 <label for="basket">Корзина</label>
               </div>
               <div class="buttom-cost">
-                <button class="button" type="submit">Показать</button>
+                <button class="button-show" type="submit">Показать</button>
               </div>
         </form>
           <!--Здесь заканчивается форма выбора-->
@@ -193,17 +196,17 @@
            <img class="content-map" src="img/map-img.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1440" height="416">
       </div>
     <div class="our-adress">
-      <h2 class="titel-modal">NEARDS DESIGN STUDIO</h2>
+      <h2 class="title-modal">NЁRDS DESIGN STUDIO</h2>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
         <p>тел. +7(812)275-75-75</p>
-      <div class="write-us">
-        <a href="#">Напишите нам</a>
+      <div class="write write-us-btn">
+        <a class="write-us" href="#">Напишите нам</a>
       </div>
     </div>
       <div class="appointment-info">
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <h2>Напишите нам</h2>
-          <button class="modal-close" type="button">Закрыть</button>
+          <h2 class="form-title">Напишите нам</h2>
+           <button class="modal-close" type="button"></button>
           <p class="appointment-item">
             <label for="name">Ваше имя:</label>
             <input id="name" type="text" name="last-first-name" value="" placeholder="Имя Фамилия">
@@ -214,23 +217,23 @@
             <label for="mail-1">Текст письма:</label><br>
             <textarea id="mail-1" name="mail" placeholder="В свободной форме" rows="10" cols="50" ></textarea>
           </p>
-          <button class="button" type="submit">Отправить</button>
+          <button class="form-button" type="submit">Отправить</button>
         </form> 
       </div> 
      <footer class="main-footer">
-       <div class="social">
-         <div class="social-btn">
-           <ul>
-             <li><a class="social-btn social-btn-vk" href="#">ВКонакте</a></li>
-             <li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
-             <li><a class="social-btn social-btn-ins" href="#">Instagramm</a></li>
-           </ul>
-         </div>
-         <div class="action">
-           <p class="friendship"><b>Давайте дружить, это выгодно!</b></p>
-           <p>Скидка 10% для друзей из социальных сетей</p>
-         </div>
-       </div>
-     </footer>
+      <div class="social">
+        <div class="social-btn">
+          <ul class="social-button">
+            <li><a class="social-btn social-btn-vk" href="#">ВКонакте</a></li>
+            <li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
+            <li><a class="social-btn social-btn-ins" href="#">Instagramm</a></li>
+          </ul>
+        </div>
+        <div class="action">
+          <p class="friendship"><b>Давайте дружить, это выгодно!</b></p>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </div>
+    </footer>
    </body>
  </html>
