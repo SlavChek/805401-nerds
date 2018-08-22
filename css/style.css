@@ -251,6 +251,10 @@ margin-top:10px;
   color:#000000;
 }
 
+.form-switch label:active{
+color: rgba(40, 49, 54, 0.3);
+}
+
 .price-title{
   letter-spacing: 0.2px;
 }
@@ -341,10 +345,24 @@ margin-top:10px;
 }
 
 .template{
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
+
+.design-template img{
+  display: table;
+}
+
+.overlay{
+  opacity: 0.12;
+}
+.overlay:hover{
+  opacity: 1;
+}
+
+.design-template img:active{}
 
 .btn-pay{
   display: table-cell;
@@ -368,6 +386,9 @@ margin-top:10px;
   background-color:#d7373b ;
 }
 
+.pagination{
+  margin-bottom: 10px;
+}
 
 .number-btn{
   display: table-cell;
@@ -406,12 +427,17 @@ margin-top:10px;
   
 }
 
-.template-tit{
+
+.template-title{
   font-size: 17.5px;
   font-weight: bold;
   line-height: 31.5px;
   color: #000000;
 }
+.block-1{
+  padding:0px;
+}
+
 
 .write-us-btn{
   display: table-cell;
@@ -468,7 +494,7 @@ margin-top:10px;
 }
 
 .social-btn{
-color: #000000;
+  color: #000000;
 }
 
 .action{
