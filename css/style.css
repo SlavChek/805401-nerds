@@ -307,8 +307,24 @@ color: rgba(40, 49, 54, 0.3);
   border: solid 2px #d7dcde;
 }
 
+.appointment-form input:hover {
+  border: solid 2px #b4b9bb;
+}
+
+.appointment-form input:active {
+  border: solid 2px #000000;
+}
+
 .appointment-form textarea{
   border: solid 2px #d7dcde;
+}
+
+.appointment-form textarea:hover{
+  border: solid 2px #b4b9bb;
+}
+
+.appointment-form textarea:active{
+  border: solid 2px #000000;
 }
 
 .sorting-title{
@@ -361,8 +377,6 @@ color: rgba(40, 49, 54, 0.3);
 .overlay:hover{
   opacity: 1;
 }
-
-.design-template img:active{}
 
 .btn-pay{
   display: table-cell;
@@ -421,6 +435,14 @@ color: rgba(40, 49, 54, 0.3);
   background-color:#ffffff;
 }
 
+.number-btn:first-child:hover{
+  border:4px solid #dfdfdf;
+}
+
+.number-btn:first-child:active{
+  border:4px solid rgba(0, 1, 1, 0.1);
+}
+
 .number-btn:last-child{
   width: 260px;
   height: 50px;
@@ -472,8 +494,6 @@ color: rgba(40, 49, 54, 0.3);
 .modal-close{
   width: 21px;
   height: 21px;
-  background-image: url(../img/close-cross.svg) no-repeat;
-  opacity: 0.3;
 }
 
 .form-button{
