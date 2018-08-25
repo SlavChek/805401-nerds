@@ -13,12 +13,6 @@ body {
 a{
   text-decoration: none;
 }
-/* Описания общих состояний*/
-
-/* Описания header*/
-.main-header {
-  background-color: #eeeeee;
-}
 
 .visually-hidden{
 position: absolute;
@@ -27,11 +21,18 @@ position: absolute;
   height: 1px;
   margin: -1px;
 }
+/* Описания общих состояний*/
+
+/* Описания header*/
+.main-header {
+  background-color: #eeeeee;
+}
+
 /*Описание состояний логотипа в header*/
 .main-logo{
   margin-right: 200px;
   padding-top:27px;
-  border: 2px solid red;
+  
 }
 .top-logo:hover{
   opacity: 0.8;
@@ -79,7 +80,7 @@ position: absolute;
   color: #000000;
 }
 .slider{
-border: 2px solid red;
+
 }
 
 
@@ -117,7 +118,7 @@ margin-top:10px;
 }
 
 .service-item{
-  margin-bottom: 10px;
+ 
 }
 
 .servise-title{
@@ -230,6 +231,7 @@ margin-top:10px;
 }
 .long-line {
   width: 1160px;
+  margin-bottom: 45px;
   border:solid 2px;
   opacity: 0.2;
 }
@@ -237,6 +239,13 @@ margin-top:10px;
 .long-line-center{
   width: 1160px;
   margin-bottom: 75px;
+  border:solid 2px;
+  opacity: 0.2;
+}
+
+.long-line-bottom{
+  width: 1160px;
+  margin-bottom: 78px;
   border:solid 2px;
   opacity: 0.2;
 }
@@ -523,6 +532,10 @@ color: rgba(40, 49, 54, 0.3);
   background-color: #fb565a;
  
 }
+
+.map{
+  width:1440;
+}
 /* Описания всплывающего окна*/
 /* Описания подвала*/
 .social-button{
@@ -555,7 +568,6 @@ body{
 .main-header{
   padding-left:120px;
   margin-bottom:82px;
-  border: 2px solid black;
 }
 
 .main-container{
@@ -563,11 +575,11 @@ body{
   min-height:544px;
   margin-top:0px;
   padding-left:20px;
+  padding-bottom: 0px;
   display:flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid red;
 }
 
 .main-nav{
@@ -581,13 +593,11 @@ body{
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border:2px solid green;
 }
 .site-navigation{
   width: 440px;
   display:flex;
   justify-content: space-between;
-  border: 2px solid red;
   margin-right: 280px;
 }
 
@@ -623,11 +633,59 @@ body{
 
 .studio-wrapper{
   padding-left: 20px;
+  margin-bottom: 72px;
+  display: flex;
+  
+  
+}
+
+.studio-info{
+  margin-right: 100px;
+}
+
+.features-item-wrapper{
+  display:flex;
+}
+
+.big-logo{
+  margin-bottom: 30px;
+}
+
+.title-feautures{
+  margin-bottom: 40px;
+}
+
+.clients{
+  display:flex;
+  justify-content: space-around;
+  margin-bottom: 45px;
+}
+/* Сеточные стили в main*/
+
+.slider{
+padding-bottom: 0px;
+}
+
+.main-footer{
+  width:1200px;
+  margin-left:120px;
+}
+
+.social{
+  padding-left:20px;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.social-button{
+  width: 260px;
   display: flex;
 }
 
-
-
+.social-btn{
+  margin-right: 20px;
+}
 
 
 
