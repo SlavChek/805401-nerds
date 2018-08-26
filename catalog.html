@@ -7,11 +7,11 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
-      <div class="main-cont">
-       <div class="wraper">
-     <div class="main-logo">
+      <div class="main-container">
+        <div class="wrapper">
+      <div class="main-logo">
         <a href="index.html" aria-label="Переход на главную страницу"><img class="top-logo" src="img/nerds-logo.svg" alt="Логотип дизайн студии нрёрдс" width="160" height="65" ></a>
 	  </div>
     <nav class="main-nav" aria-label="Основное меню навигации">
@@ -35,17 +35,46 @@
       </nav>
         </div>
       </div>
-    </header>
-    <main class="container">
       <div class="page-title">
         <h1 class="page-title-main">Магазин готовых шаблонов</h1>
       </div>
+    </header>
+    <main class="main-content">
       <div class="selection-form">
+        <div class="sorting-selecton">
+          <div class="sorting-up-or-down">
+            <ul class="sorting-up-down-list">
+              <li>
+                <a class="sorting-up" href="#">&#11014;</a>
+              </li>
+              <li>
+                <a class="sorting-down" href="#">&#11015;</a>
+              </li>
+            </ul> 
+          </div> 
+          <div class="selection-type">
+            <ul class="selection-list">
+              <li>
+                <a class="selection-link" href="#">по цене</a>
+              </li>
+              <li>
+                <a class="selection-link" href="#">по типу</a>
+              </li>
+              <li>
+                <a class="selection-link" href="#">по названию</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sorting-label">
+            <h2 class="sorting-title">Сортировать:</h2>
+          </div>
+          <div class="price-title-box">
+            <h2 class="form-title-switch price-title">Стоимость:</h2>
+          </div>
+        </div>
+      <div class="select-container">
         <aside class="main-form">
           <form class="form-switch" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value" aria-label="Форма выбора пораметров заказа">
-            <div class="">
-              <h2 class="form-title-switch price-title">Стоимость:</h2>
-            </div>
             <div class="range-select">
               <div class="half-width">
                 0 <input type="range" id="cost" name="cost" min="0" max="15000" step="100"> 15000
@@ -84,165 +113,145 @@
               <div class="buttom-cost">
                 <button class="button-show btn-show-coast" type="submit">показать</button>
               </div>
-        </form>
-          <!--Здесь заканчивается форма выбора-->
+          </form>
         </aside>
-        <div class="sorting-selecton">
-          <div class="sorting-label">
-            <h2 class="sorting-title">Сортировать</h2>
-          </div>
-          <div class="selection-type">
-            <ul class="selection-list">
-              <li>
-                <a class="selection-link" href="#">по цене</a>
-              </li>
-              <li>
-                <a class="selection-link" href="#">по типу</a>
-              </li>
-              <li>
-                <a class="selection-link" href="#">по названию</a>
-              </li>
-            </ul>
-          </div>
-          <div class="sorting-up-or-down">
-            <ul class="sorting-up-down-list">
-              <li>
-                <a class="sorting-up" href="#">&#11014;</a>
-              </li>
-              <li>
-                <a class="sorting-down" href="#">&#11015;</a>
-              </li>
-            </ul> 
-          </div> 
-        </div>
-      <section class="product cards">
-        <div class="cards">
-          <div class="cards-item">
-            <!---->
+        <section class="product cards">
+          <div class="cards">
+            <div class="cards-item">
+              <div class="design-template">
+                <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
+                <img class="design-template-img" src="img/img-sedona.jpg" alt="Sedona информационный сайт для туристов" width="360" height="576">
+              </div>
+              <div class="template">
+                <h3 class="template-title">SEDONA</h3>
+                <p>Информационный сайт <br> для туристов</p>
+                <div>
+                  <a class="btn-pay btn-card" href="#">9 990 руб.</a>
+                </div>
+              </div>
+            </div>
+              <div class="cards-item">
+                <div class="design-template">
+                  <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
+                  <img class="design-template-img" src="img/img-pink.jpg" alt="Pink продуктовый лендинг приложения для iOS и Android" width="360" height="576">
+                </div>
+                <div class="template">
+                  <h3 class="template-title">PINK</h3>
+                  <p>Продуктовый лендинг приложений <br> для iOS и Android</p>
+                  <div>
+                  <a class="btn-pay btn-card" href="#">9 990 руб.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards-item">
+                <div class="design-template">
+                  <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
+                  <img class="design-template-img" src="img/img-barbershop.jpg" alt="Barbershop салон красоты для мужчин" width="360" height="576">
+                </div>
+                <div class="template">
+                  <h3 class="template-title">BARBERSHOP</h3>
+                  <p>Салон красоты. <br> Для мужчин, да.</p>
+                  <div>
+                  <a class="btn-pay btn-card" href="#">9 990 руб.</a>
+                </div>
+              </div>
+            </div>
+              <div class="cards-item">
+                <div class="design-template">
+                  <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
+                  <img class="design-template-img" src="img/img-mishka.jpg" alt="Mishka интернет-магазин вязаных игрушек" width="360" height="576">
+                </div>
+                <div class="template">
+                  <h3 class="template-title">MISHKA</h3>
+                  <p>Интернет-магазин <br> вязаных игрушек</p>
+                <div>
+                  <a class="btn-pay btn-card" href="#">9 990 руб.</a>
+                </div>
+              </div>
+            </div>
+              <div class="cards-item">
             <div class="design-template">
               <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
-              <img class="design-template-img" src="img/img-sedona.jpg" alt="Sedona информационный сайт для туристов" width="360" height="576">
+              <img class="design-template-img" src="img/img-aplus.jpg" alt="A Plus лендинг курсов повышения квалификации" width="360" height="576">
             </div>
             <div class="template">
-              <h3 class="template-title">SEDONA</h3>
-              <p>Информационный сайт для туристов</p>
-              <a class="btn-pay btn-card" href="#">9 990 руб.</a>
+              <h3 class="template-title">A PLUS</h3>
+              <p>Лендинг курсов повышения <br> квалификации</p>
+              <div>
+                <a class="btn-pay btn-card" href="#">9 990 руб.</a>
+              </div>
             </div>
           </div>
-             <div class="cards-item">
-               <!---->
-               <div class="design-template">
-                 <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
-                 <img class="design-template-img" src="img/img-pink.jpg" alt="Pink продуктовый лендинг приложения для iOS и Android" width="360" height="576">
-               </div>
-               <div class="template">
-                 <h3 class="template-title">PINK</h3>
-                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                 <a class="btn-pay btn-card" href="#">9 990 руб.</a>
+            <div class="cards-item">
+              <div class="block-1">
+                <div class="design-template">
+                  <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
+                  <img class="design-template-img" src="img/img-kvast.jpg" alt="Кваст промо-сайт призводителя крафтового кваса" width="360" height="576">
+                </div>
+              </div>
+                <div class="template">
+                  <h3 class="template-title">КВАСТ</h3>
+                  <p>Промо-сайт призводителя <br> крафтового кваса</p>
+                  <div>
+                    <a class="btn-pay btn-card" href="#">9 990 руб.</a>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </section>
+          </div>
+            <div class="page">
+              <a class="page-list page-link" href="#">1</a>
+              <a class="page-list page-link" href="#">2</a>
+              <a class="page-list page-link" href="#">3</a>
+              <a class="page-list page-link" href="#">Следующая</a>
+            </div>
+          </div>
+        </main>
+          <div class="map">
+            <img class="content-map" src="img/map-img.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1440" height="416">
+          </div>
+             <!--
+             <div class="our-adress">
+               <h2 class="title-modal">NЁRDS DESIGN STUDIO</h2>
+                 <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
+                 <p>тел. +7(812)275-75-75</p>
+               <div class="write write-us-btn">
+                 <a class="write-us" href="#">Напишите нам</a>
                </div>
              </div>
-             <div class="cards-item">
-               <!---->
-               <div class="design-template">
-                 <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
-                 <img class="design-template-img" src="img/img-barbershop.jpg" alt="Barbershop салон красоты для мужчин" width="360" height="576">
-               </div>
-               <div class="template">
-                 <h3 class="template-title">BARBERSHOP</h3>
-                 <p>Салон красоты. Для мужчин, да.</p>
-                 <a class="btn-pay btn-card" href="#">9 990 руб.</a>
-               </div>
-             </div>
-             <div class="cards-item">
-              <!---->
-               <div class="design-template">
-                 <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
-                 <img class="design-template-img" src="img/img-mishka.jpg" alt="Mishka интернет-магазин вязаных игрушек" width="360" height="576">
-               </div>
-               <div class="template">
-                 <h3 class="template-title">MISHKA</h3>
-                 <p>Интернет-магазин вязаных игрушек</p>
-                 <a class="btn-pay btn-card" href="#">9 990 руб.</a>
-               </div>
-             </div>
-             <div class="cards-item">
-               <!---->
-             <div class="design-template">
-               <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
-               <img class="design-template-img" src="img/img-aplus.jpg" alt="A Plus лендинг курсов повышения квалификации" width="360" height="576">
-             </div>
-             <div class="template">
-               <h3 class="template-title">A PLUS</h3>
-               <p>Лендинг курсов повышения квалификации</p>
-               <a class="btn-pay btn-card" href="#">9 990 руб.</a>
-             </div>
-           </div>
-             <div class="cards-item">
-               <!---->
-               <div class="block-1">
-                 <div class="design-template">
-                   <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
-                   <img class="design-template-img" src="img/img-kvast.jpg" alt="Кваст промо-сайт призводителя крафтового кваса" width="360" height="576">
-                 </div>
-               </div>
-                 <div class="template">
-                   <h3 class="template-title">КВАСТ</h3>
-                   <p>Промо-сайт призводителя крафтового кваса</p>
-                   <a class="btn-pay btn-card" href="#">9 990 руб.</a>
-                 </div>
+               <div class="appointment-info">
+                 <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                   <h2 class="form-title">Напишите нам</h2>
+                    <button class="modal-close" type="button"></button>
+                   <p class="appointment-item">
+                     <label for="name">Ваше имя:</label>
+                     <input id="name" type="text" name="last-first-name" value="" placeholder="Имя Фамилия">
+                     <label for="email">Ваш e-mail:</label>
+                     <input id="email" type="email" name="email-adress" value="" placeholder="email@example.com">
+                   </p>
+                   <p class="appointment-item">
+                     <label for="mail-1">Текст письма:</label><br>
+                     <textarea id="mail-1" name="mail" placeholder="В свободной форме" rows="10" cols="50" ></textarea>
+                   </p>
+                   <button class="form-button" type="submit">Отправить</button>
+                 </form> 
                </div> 
+             -->
+           <footer class="main-footer">
+             <div class="social">
+               <div class="social-btn">
+                 <ul class="social-button">
+                   <li><a class="social-btn social-btn-vk" href="#">ВКонакте</a></li>
+                   <li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
+                   <li><a class="social-btn social-btn-ins" href="#">Instagramm</a></li>
+                 </ul>
+               </div>
+               <div class="action">
+                 <p class="friendship"><b>Давайте дружить, это выгодно!</b></p>
+                 <p>Скидка 10% для друзей из социальных сетей</p>
+               </div>
              </div>
-           </section>
-             <div class="page">
-               <a class="page-list page-link" href="#">1</a>
-               <a class="page-list page-link" href="#">2</a>
-               <a class="page-list page-link" href="#">3</a>
-               <a class="page-list page-link" href="#">Следующая</a>
-             </div>
-           </div>
-         </main>
-         <div class="contacts-map">
-           <img class="content-map" src="img/map-img.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1440" height="416">
-      </div>
-    <div class="our-adress">
-      <h2 class="title-modal">NЁRDS DESIGN STUDIO</h2>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19.8</p>
-        <p>тел. +7(812)275-75-75</p>
-      <div class="write write-us-btn">
-        <a class="write-us" href="#">Напишите нам</a>
-      </div>
-    </div>
-      <div class="appointment-info">
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <h2 class="form-title">Напишите нам</h2>
-           <button class="modal-close" type="button"></button>
-          <p class="appointment-item">
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" name="last-first-name" value="" placeholder="Имя Фамилия">
-            <label for="email">Ваш e-mail:</label>
-            <input id="email" type="email" name="email-adress" value="" placeholder="email@example.com">
-          </p>
-          <p class="appointment-item">
-            <label for="mail-1">Текст письма:</label><br>
-            <textarea id="mail-1" name="mail" placeholder="В свободной форме" rows="10" cols="50" ></textarea>
-          </p>
-          <button class="form-button" type="submit">Отправить</button>
-        </form> 
-      </div> 
-     <footer class="main-footer">
-      <div class="social">
-        <div class="social-btn">
-          <ul class="social-button">
-            <li><a class="social-btn social-btn-vk" href="#">ВКонакте</a></li>
-            <li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
-            <li><a class="social-btn social-btn-ins" href="#">Instagramm</a></li>
-          </ul>
-        </div>
-        <div class="action">
-          <p class="friendship"><b>Давайте дружить, это выгодно!</b></p>
-          <p>Скидка 10% для друзей из социальных сетей</p>
-        </div>
-      </div>
-    </footer>
-   </body>
- </html>
+           </footer>
+         </body>
+       </html>

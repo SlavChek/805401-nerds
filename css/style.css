@@ -15,7 +15,7 @@ a{
 }
 
 .visually-hidden{
-position: absolute;
+  position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
@@ -42,6 +42,7 @@ position: absolute;
   opacity: 0.3;
 }
 /*Описание состояний логотипа в header*/
+
 /* Описания меню навигации в header*/
 .main-nav {
   font-size: 17.5px;
@@ -50,7 +51,6 @@ position: absolute;
   color: #000000;
   
 }
-
 
 .site-navigation,
 .user-navigation {
@@ -72,6 +72,7 @@ position: absolute;
   color: rgba(0, 0, 0, 0.3);
 }
 /* Описания меню навигации в header*/
+
 /* Описания состояний слайдера в header */
 .slider-text-big{
   font-size: 54px;
@@ -79,10 +80,6 @@ position: absolute;
   line-height: 54px;
   color: #000000;
 }
-.slider{
-
-}
-
 
 .slider-link{
   display: table-cell;
@@ -111,7 +108,9 @@ position: absolute;
   background-color: #d7373b;
 }
 /* Описания состояний слайдера в header */
+
 /* Описания header*/
+
 /* Описания основного содержимого*/
 .main-container{
 margin-top:10px;
@@ -407,7 +406,7 @@ color: rgba(40, 49, 54, 0.3);
 }
 
 .btn-pay{
-  display: table-cell;
+  display:table-cell;
   width: 200px;
   height: 50px;
   text-align: center;
@@ -530,9 +529,8 @@ color: rgba(40, 49, 54, 0.3);
   line-height: 17.5px;
   color: #ffffff;
   background-color: #fb565a;
- 
 }
-
+/* Описания всплывающего окна*/
 .map{
   width:1440;
 }
@@ -557,6 +555,7 @@ color: rgba(40, 49, 54, 0.3);
   color: #000000;
 }
 /* Описания подвала*/
+
 /*Сеточные стили*/
 html,
 body{
@@ -568,11 +567,11 @@ body{
 .main-header{
   padding-left:120px;
   margin-bottom:82px;
+  min-height:505px;
 }
 
 .main-container{
   width:1200px;
-  min-height:544px;
   margin-top:0px;
   padding-left:20px;
   padding-bottom: 0px;
@@ -601,6 +600,10 @@ body{
   margin-right: 280px;
 }
 
+.slider{
+padding-bottom: 0px;
+}
+
 .slider-1{
   width:1160px;
   display: flex;
@@ -614,6 +617,7 @@ body{
   flex-wrap: wrap;
 }
 /*Сеточные стили в header*/
+
 /* Сеточные стили в main*/
 .main-content{
   width:1200px; 
@@ -634,9 +638,7 @@ body{
 .studio-wrapper{
   padding-left: 20px;
   margin-bottom: 72px;
-  display: flex;
-  
-  
+  display: flex; 
 }
 
 .studio-info{
@@ -662,9 +664,7 @@ body{
 }
 /* Сеточные стили в main*/
 
-.slider{
-padding-bottom: 0px;
-}
+/*сеточные стили подвала в index*/
 
 .main-footer{
   width:1200px;
@@ -674,7 +674,7 @@ padding-bottom: 0px;
 .social{
   padding-left:20px;
   display: flex;
-  align-items:center;
+  align-items:baseline;
   justify-content: space-between;
 }
 
@@ -686,6 +686,112 @@ padding-bottom: 0px;
 .social-btn{
   margin-right: 20px;
 }
+/*Сеточные стили подвала в index*/
+
+/*Сеточные стили в index*/
+
+
+/*Сеточные стили catalog*/
+
+/*Сеточные стили header в catalog*/
+
+.inner-page .main-header{
+  width:1440px;
+  min-height: 355px;
+}
+
+.inner-page .wrapper {
+  margin-bottom: 50px;
+}
+
+.page-title{
+  margin-bottom: 110;
+}
+/*Сеточные стили header в catalog*/
+
+/*Сеточные стили main в catalog*/
+
+.selection-form{
+  padding-left:20px;
+}
+
+.sorting-selecton{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: space-around;  
+}
+
+.sorting-up-down-list{
+  display: flex;
+}
+
+.selection-list{
+  width: 280px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-label{
+  flex-grow: 2;
+}
+.price-title-box{
+  margin-right: 270px;
+}
+
+.select-container{
+  display:flex;
+  margin-bottom: 60px;
+}
+
+.main-form{
+  margin-right: 100px;
+}
+
+.cards{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.half-width{
+  margin-bottom: 50px;
+}
+
+.chekbox-select{
+  margin-bottom: 45px;
+}
+
+.cards-item{
+  margin-left:40px;
+  margin-bottom: 35px;
+  position: 
+}
+
+.template{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.inner-page .btn-pay{
+  justify-content: center;
+}
+
+.page{
+  padding-left: 400px;
+  margin-bottom:60px;
+}
+
+.action{
+  margin-bottom: 80px;
+}
+/*Сеточные стили main в catalog*/
+
+
+
+
 
 
 
