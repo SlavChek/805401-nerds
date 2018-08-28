@@ -1,5 +1,8 @@
 /* Описания общих состояний*/
 body {
+  /*Сеточные стили*/
+  min-width: 1440px;
+  /*Сеточные стили*/
   margin: 0;
   padding:  0;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -14,16 +17,30 @@ a{
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 ul{
 list-style: none;
 }
-
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Описания общих состояний*/
@@ -36,7 +53,7 @@ list-style: none;
 
 /*Описание состояний логотипа в header*/
 
-.main-logo {
+.main-logo img {
   margin-right: 200px;
   padding-top: 27px;
   
@@ -74,6 +91,25 @@ list-style: none;
 .user-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+/*Описание иконки корзина*/
+.user-navigation-list{
+  padding-left:50px;
+  position: relative;
+}
+
+.user-navigation-list::before{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top:3px;
+  left:16px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/*Описание иконки корзина*/
 
 /* Описания меню навигации в header*/
 
@@ -232,6 +268,7 @@ list-style: none;
 
 .long-line {
   width: 1160px;
+  margin:0;
   margin-bottom: 45px;
   border: solid 2px;
   opacity: 0.2;
@@ -239,6 +276,7 @@ list-style: none;
 
 .long-line-center {
   width: 1160px;
+  margin:0;
   margin-bottom: 75px;
   border: solid 2px;
   opacity: 0.2;
@@ -246,6 +284,7 @@ list-style: none;
 
 .long-line-bottom {
   width: 1160px;
+  margin:0;
   margin-bottom: 78px;
   border: solid 2px;
   opacity: 0.2;
@@ -536,7 +575,7 @@ list-style: none;
 /* Описания всплывающего окна*/
 
 .map {
-  width: 1440;
+  min-width: 1440;
 }
 
 /* Описания всплывающего окна*/
@@ -572,24 +611,20 @@ body {
 /*Сеточные стили в header*/
 
 .main-header {
-  padding-left: 120px;
+  margin:0 auto;
   margin-bottom: 82px;
   min-height: 505px;
 }
 
 .main-container {
   width: 1200px;
+  margin:0 auto;
   margin-top: 0px;
-  padding-left: 20px;
+  padding-left: 0px;
   padding-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-}
-
-.main-nav {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -601,11 +636,22 @@ body {
   justify-content: space-between;
 }
 
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .site-navigation {
   width: 440px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-right: 280px;
+}
+
+.user-navigation{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .slider {
@@ -624,13 +670,14 @@ padding-bottom: 0px;
 /* Сеточные стили в main*/
 
 .main-content {
+  margin:0 auto;
   width: 1200px; 
-  padding-left: 120px;
+  padding-left: 0px;
 }
 
 .our-service {
   margin-bottom: 80px;
-  padding-left: 20px;
+  padding-left: 0px;
   display: flex;
 }
 
@@ -639,7 +686,7 @@ padding-bottom: 0px;
 }
 
 .studio-wrapper {
-  margin-left: 20px;
+  margin-left: 0px;
   margin-bottom: 72px;
   display: flex;
 }
@@ -673,7 +720,7 @@ padding-bottom: 0px;
 
 .main-footer {
   width: 1200px;
-  margin-left: 120px;
+  margin:0 auto;
 }
 
 .social {
