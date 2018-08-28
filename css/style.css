@@ -114,39 +114,160 @@ input[type="radio"].visually-hidden {
 /* Описания меню навигации в header*/
 
 /* Описания состояний слайдера в header */
-
-.slider-text-big {
-  font-size: 54px;
-  font-weight: 500;
-  line-height: 54px;
-  color: #000000;
+.container {
+  width: 1144px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider {
+  position: relative;
+  
+  background-color: #eeeeee;
 }
 
-.slider-link {
-  display: table-cell;
-  width: 240px;
-  height: 50px;
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  
+  width: 160px;
+  height: 18px;
+
   text-align: center;
-  vertical-align: middle;
-  border-radius: 3px;
+  font-size: 0;
+  transform: translateX(-50%);
 }
 
-.slider-btn {
-  color: #ffffff;
-  background-color: #fb565a;
-  font-size: 17.5px;
+.slider-controls label {
+  position: relative;
+  
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+  
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  
+  width: 18px;
+  height: 18px;
+  
+  background: #ffffff;
+  
+  border-radius: 50%;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+  
+  font-size: 55px;
+  line-height: 55px;
   font-weight: 500;
-  line-height: 17.5px;
 }
 
-.slider-btn:hover {
+.slider-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.button {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
   background-color: #e74246;
 }
 
-.slider-btn:active {
-  color: rgba(255, 255, 255, 0.3);
+.button:active {
   background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* Описания состояний слайдера в header */
@@ -229,15 +350,30 @@ input[type="radio"].visually-hidden {
 }
 
 .slogan {
-  font-size:45px;
+  font-size:45.5px;
   font-weight: 500;
-  line-height: 45px;
+  line-height: 45.5px;
   color: #000000;
   box-sizing: border-box;
 }
 
 .lead-info{
   width: 610px;
+}
+
+.studio-service{
+  position: relative;
+  padding-left: 40px;
+}
+
+.studio-service::before{
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 2px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .studio-info-label {
@@ -270,15 +406,15 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin:0;
   margin-bottom: 45px;
-  border: solid 2px;
+  border: solid 1px;
   opacity: 0.2;
 }
 
 .long-line-center {
   width: 1160px;
   margin:0;
-  margin-bottom: 75px;
-  border: solid 2px;
+  margin-bottom: 40px;
+  border: solid 1px;
   opacity: 0.2;
 }
 
@@ -286,7 +422,7 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin:0;
   margin-bottom: 78px;
-  border: solid 2px;
+  border: solid 1px;
   opacity: 0.2;
 }
 
@@ -583,7 +719,10 @@ input[type="radio"].visually-hidden {
 /* Описания подвала*/
 
 .social-btn {
+  width:80px;
+  height:80px;  
   color: #000000;
+  
 }
 
 .action {
@@ -611,9 +750,11 @@ body {
 /*Сеточные стили в header*/
 
 .main-header {
+  width: 1440px;
   margin:0 auto;
   margin-bottom: 82px;
   min-height: 505px;
+  
 }
 
 .main-container {
@@ -654,16 +795,6 @@ body {
   flex-wrap: wrap;
 }
 
-.slider {
-padding-bottom: 0px;
-}
-
-.slider-1 {
-  width: 1160px;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: no-wrap;
-}
 
 /*Сеточные стили в header*/
 
@@ -672,17 +803,24 @@ padding-bottom: 0px;
 .main-content {
   margin:0 auto;
   width: 1200px; 
-  padding-left: 0px;
+  padding:0 auto;
 }
 
 .our-service {
-  margin-bottom: 80px;
+  width:1100;
+  margin-bottom: 40px;
   padding-left: 0px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .service-item {
-  margin-right: 140px;
+  margin-right: 100px;
+  margin-bottom: 40px;
+}
+
+.service-item p {
+ margin-bottom: 35px;
 }
 
 .studio-wrapper {
@@ -692,12 +830,42 @@ padding-bottom: 0px;
 }
 
 .studio-info {
-  
   margin-right: 149px;
+  padding-top: 40px;
+}
+
+.studio-info-title{
+  margin-bottom: 44px;
+}
+
+.slogan{
+  width: 660px;
+  white-space: pre;
+}
+
+.studio-info-service{
+  padding-left: 0px;
+  
+}
+
+.studio-info-label{
+  margin-bottom: 22px;
+}
+
+.studio-service:not(:last-child){
+  margin-bottom:30px;
+}
+
+.features{
+  padding-bottom: 40px;
 }
 
 .features-item-wrapper {
-  display: flex;
+  display: flex; 
+}
+
+.lead-info{
+  margin-bottom: 44px;
 }
 
 .big-logo {
@@ -715,7 +883,10 @@ padding-bottom: 0px;
 }
 
 /* Сеточные стили в main*/
-
+.map{
+  width: 1440px;
+  margin:0 auto;
+}
 /*сеточные стили подвала в index*/
 
 .main-footer {
