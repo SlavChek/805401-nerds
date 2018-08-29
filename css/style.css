@@ -360,6 +360,7 @@ input[type="radio"].visually-hidden {
 }
 
 .servise-title {
+  margin: 20px 0;
   font-size: 24.5px;
   font-weight: bold;
   line-height: 31.5px;
