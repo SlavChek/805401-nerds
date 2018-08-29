@@ -75,15 +75,22 @@
       <div class="select-container">
         <aside class="main-form">
           <form class="form-switch" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value" aria-label="Форма выбора пораметров заказа">
-            <div class="range-select">
-              <div class="half-width">
-                0 <input type="range" id="cost" name="cost" min="0" max="15000" step="100"> 15000
-              </div>
-              <div class="half-width output-area">
-                <span class="range-label">от</span><output name="costoutput">0</output>
-                <span class="range-label">до</span>
-              </div>
+            <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 20%; width: 30%"></div>
             </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
               <div class="">
                 <h2 class="form-title-switch">Сетка:</h2>
               </div> 
@@ -117,82 +124,80 @@
         </aside>
         <section class="product-cards">
           <div class="cards">
-            <div class="cards-item">
+            <div class="cards-item cards-item-img-1">
               <div class="design-template">
                 <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
                 <img class="design-template-img" src="img/img-sedona.jpg" alt="Sedona информационный сайт для туристов" width="360" height="576">
               </div>
-              <div class="template">
+              <div class="template template-sedona">
                 <h3 class="template-title">SEDONA</h3>
                 <p>Информационный сайт <br> для туристов</p>
-                <div>
+                <div class="btn-pay-wrapper">
                   <a class="btn-pay btn-card" href="#">9 990 руб.</a>
                 </div>
               </div>
             </div>
-              <div class="cards-item">
+              <div class="cards-item cards-item-img-2">
                 <div class="design-template">
                   <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
                   <img class="design-template-img" src="img/img-pink.jpg" alt="Pink продуктовый лендинг приложения для iOS и Android" width="360" height="576">
                 </div>
-                <div class="template">
+                <div class="template template-pink">
                   <h3 class="template-title">PINK</h3>
                   <p>Продуктовый лендинг приложений <br> для iOS и Android</p>
-                  <div>
+                  <div class="btn-pay-wrapper">
                   <a class="btn-pay btn-card" href="#">9 990 руб.</a>
                   </div>
                 </div>
               </div>
-              <div class="cards-item">
+              <div class="cards-item cards-item-img-3">
                 <div class="design-template">
                   <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
                   <img class="design-template-img" src="img/img-barbershop.jpg" alt="Barbershop салон красоты для мужчин" width="360" height="576">
                 </div>
-                <div class="template">
+                <div class="template template-barbershop">
                   <h3 class="template-title">BARBERSHOP</h3>
                   <p>Салон красоты. <br> Для мужчин, да.</p>
-                  <div>
+                  <div class="btn-pay-wrapper">
                   <a class="btn-pay btn-card" href="#">9 990 руб.</a>
                 </div>
               </div>
             </div>
-              <div class="cards-item">
+              <div class="cards-item cards-item-img-4">
                 <div class="design-template">
                   <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
                   <img class="design-template-img" src="img/img-mishka.jpg" alt="Mishka интернет-магазин вязаных игрушек" width="360" height="576">
                 </div>
-                <div class="template">
+                <div class="template template-mishka">
                   <h3 class="template-title">MISHKA</h3>
                   <p>Интернет-магазин <br> вязаных игрушек</p>
-                <div>
+                <div class="btn-pay-wrapper">
                   <a class="btn-pay btn-card" href="#">9 990 руб.</a>
                 </div>
               </div>
             </div>
-              <div class="cards-item">
+              <div class="cards-item cards-item-img-5">
             <div class="design-template">
               <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
               <img class="design-template-img" src="img/img-aplus.jpg" alt="A Plus лендинг курсов повышения квалификации" width="360" height="576">
             </div>
-            <div class="template">
+            <div class="template template-aplus">
               <h3 class="template-title">A PLUS</h3>
               <p>Лендинг курсов повышения <br> квалификации</p>
-              <div>
+              <div class="btn-pay-wrapper">
                 <a class="btn-pay btn-card" href="#">9 990 руб.</a>
               </div>
             </div>
           </div>
-            <div class="cards-item">
-              <div class="block-1">
+            <div class="cards-item cards-item-img-6">
                 <div class="design-template">
                   <img class="overlay" src="img/browser.svg" alt="декоративня накладка">
                   <img class="design-template-img" src="img/img-kvast.jpg" alt="Кваст промо-сайт призводителя крафтового кваса" width="360" height="576">
                 </div>
-              </div>
-                <div class="template">
+                <div class="template template-kvast">
                   <h3 class="template-title">КВАСТ</h3>
                   <p>Промо-сайт призводителя <br> крафтового кваса</p>
-                  <div>
+                  <div class="btn-pay-wrapper">
                     <a class="btn-pay btn-card" href="#">9 990 руб.</a>
                   </div>
                 </div>
