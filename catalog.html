@@ -73,10 +73,9 @@
           </div>
         </div>
       <div class="select-container">
-        <aside class="main-form">
-          <form class="form-switch filter" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value" aria-label="Форма выбора пораметров заказа">
-            <fieldset class="filter-item">
-        <legend>Стоимость:</legend>
+    <aside class="main-form">
+    <form class="form-switch filter" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value" aria-label="Форма выбора пораметров заказа">
+      <fieldset class="filter-item">
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
@@ -94,24 +93,24 @@
               <div class="">
                 <h2 class="form-title-switch">Сетка:</h2>
               </div> 
-              <ul>
+              <ul class="form-filter-wrapper-radio">
                 <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" id="adaptive" value="adaptive" checked>
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="adaptive" value="adaptive" checked>
                 <label for="adaptive">Адаптивная</label><br>
                 </li>
                 <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" id="rubber" value="rubber">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="rubber" value="rubber">
                 <label for="rubber">Резиновая</label><br>
                 </li>
                 <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" id="fixed" value="fixed">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="fixed" value="fixed">
                 <label for="fixed">Фиксированния</label>
                 </li>
               </ul>
               <div class="">
                 <h2 class="form-title-switch">Особенности:</h2>
               </div>
-                <ul>
+                <ul class="form-filter-wrapper-check">
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked>
                     <label for="slider">Слайдер</label><br>
@@ -221,13 +220,14 @@
             </div>
           </section>
           </div>
-            <div class="page">
-              <a class="page-list page-link" href="#">1</a>
-              <a class="page-list page-link" href="#">2</a>
-              <a class="page-list page-link" href="#">3</a>
-              <a class="page-list page-link" href="#">Следующая</a>
-            </div>
+           <ul class="pagination-list">
+              <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+            </ul>
           </div>
+
         </main>
           <div class="contacts-map">
         <div class="map">
