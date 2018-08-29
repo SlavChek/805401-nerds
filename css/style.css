@@ -2,6 +2,7 @@
 body {
   /*Сеточные стили*/
   min-width: 1440px;
+  min-height: 2476px; 
   /*Сеточные стили*/
   margin: 0;
   padding:  0;
@@ -12,6 +13,7 @@ body {
   color: #283136;
   background-color: #ffffff;
 }
+
 
 a{
   text-decoration: none;
@@ -48,6 +50,10 @@ input[type="radio"].visually-hidden {
 /* Описания header*/
 
 .main-header {
+  width: 1440px;
+  margin:0 auto;
+  margin-bottom: 82px;
+  min-height: 505px;
   background-color: #eeeeee;
 }
 
@@ -76,6 +82,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: #000000;
 }
+
 
 .site-navigation a,
 .user-navigation a {
@@ -565,7 +572,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #666666;
 }
-
+40
 .design-template img {
   display: table;
 }
@@ -770,11 +777,6 @@ input[type="radio"].visually-hidden {
 
 /*Сеточные стили*/
 
-html,
-body {
-  min-width: 1440px;
-  min-height: 2476px; 
-}
 
 /*Сеточные стили в header*/
 
@@ -806,6 +808,11 @@ body {
   justify-content: space-between;
 }
 
+.main-logo{
+  margin-right:200px; 
+  
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -813,16 +820,21 @@ body {
 
 .site-navigation {
   width: 440px;
+  padding-left:0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-right: 280px;
+  margin-right: 200px;
 }
 
 .user-navigation{
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0px;
 }
+
+
+
 
 
 /*Сеточные стили в header*/
