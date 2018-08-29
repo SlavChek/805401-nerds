@@ -1197,7 +1197,9 @@ input[type="radio"].visually-hidden {
 }
 
 .social-btn {
-  display: inline-block;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   width:80px;
   height:80px;  
   margin-right: 20px;
@@ -1215,22 +1217,8 @@ input[type="radio"].visually-hidden {
   background-color: #d7373b;
 }
 
-.social-btn-vk{
-  background-image: url(../img/vk-icon.svg);
-  background-repeat: no-repeat;
-  background-position:50% 50%;
-}
-
-.social-btn-fb{
-   background-image: url(../img/fb-icon.svg);
-  background-repeat: no-repeat;
-  background-position:50% 50%; 
-}
-
-.social-btn-ins{
-  background-image: url(../img/insta-icon.svg);
-  background-repeat: no-repeat;
-  background-position:50% 50%; 
+.social-btn:active path {
+  fill: rgba(255,255,255,0.3);
 }
 
 .action {
