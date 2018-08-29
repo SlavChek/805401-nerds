@@ -74,7 +74,7 @@
         </div>
       <div class="select-container">
         <aside class="main-form">
-          <form class="form-switch" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value" aria-label="Форма выбора пораметров заказа">
+          <form class="form-switch filter" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=cost.value" aria-label="Форма выбора пораметров заказа">
             <fieldset class="filter-item">
         <legend>Стоимость:</legend>
         <div class="range-filter">
@@ -94,29 +94,45 @@
               <div class="">
                 <h2 class="form-title-switch">Сетка:</h2>
               </div> 
-              <div class="radio-select">
-                <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+              <ul>
+                <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" id="adaptive" value="adaptive" checked>
                 <label for="adaptive">Адаптивная</label><br>
-                <input type="radio" name="grid" id="rubber" value="rubber">
+                </li>
+                <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" id="rubber" value="rubber">
                 <label for="rubber">Резиновая</label><br>
-                <input type="radio" name="grid" id="fixed" value="fixed">
+                </li>
+                <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="grid" id="fixed" value="fixed">
                 <label for="fixed">Фиксированния</label>
-              </div>
+                </li>
+              </ul>
               <div class="">
                 <h2 class="form-title-switch">Особенности:</h2>
               </div>
-              <div class="chekbox-select">
-                <input type="checkbox" name="slider" id="slider" checked>
-                <label for="slider">Слайдер</label><br>
-                <input type="checkbox" name="advantage" id="advantage">
-                <label for="advantage">Блок преимуществ</label><br>
-                <input type="checkbox" name="news" id="news" checked>
-                <label for="news">Новости</label><br>
-                <input type="checkbox" name="gellary" id="gellary">
-                <label for="gellary">Галерея</label><br>
-                <input type="checkbox" name="basket" id="basket">
-                <label for="basket">Корзина</label>
-              </div>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked>
+                    <label for="slider">Слайдер</label><br>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="advantage">
+                    <label for="advantage">Блок преимуществ</label><br>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked>
+                    <label for="news">Новости</label><br>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gellary" id="gellary">
+                    <label for="gellary">Галерея</label><br>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="basket">
+                    <label for="basket">Корзина</label>
+                  </li> 
+                </ul>
               <div class="buttom-cost">
                 <button class="button-show btn-show-coast" type="submit">показать</button>
               </div>
