@@ -719,10 +719,39 @@ input[type="radio"].visually-hidden {
 /* Описания подвала*/
 
 .social-btn {
+  display: inline-block;
   width:80px;
   height:80px;  
   color: #000000;
-  
+  font-size:0px;
+  background-color: #e1e1e1;
+  border-radius:100%;
+}
+
+.social-btn:hover{
+  background-color: #e74246;
+}
+
+.social-btn:active{
+  background-color: #d7373b;
+}
+
+.social-btn-vk{
+  background-image: url(../img/vk-icon.svg);
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+}
+
+.social-btn-fb{
+   background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position:50% 50%; 
+}
+
+.social-btn-ins{
+  background-image: url(../img/insta-icon.svg);
+  background-repeat: no-repeat;
+  background-position:50% 50%; 
 }
 
 .action {
