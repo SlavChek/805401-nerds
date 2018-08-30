@@ -87,6 +87,7 @@ input[type="radio"].visually-hidden {
 
 .main-logo {
   margin-right: 200px;
+  margin-left:20px;
 }
 
 .top-logo:hover {
@@ -116,7 +117,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-right: 200px;
+  margin-right: 190px;
   list-style: none;
 }
 
@@ -145,6 +146,10 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   padding-left: 0px;
   list-style: none;
+}
+
+.user-navigation li:first-child{
+  margin-right: 40px;
 }
 
 .user-navigation-list{
