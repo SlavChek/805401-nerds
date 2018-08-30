@@ -11,6 +11,7 @@ body {
   font-weight: normal;
   color: #283136;
   background-color: #ffffff;
+  
 }
 
 
@@ -569,10 +570,73 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
+/* Описания всплывающего окна*/
+.contacts-map{
+  
+
+  
+}
 .map{
+  position: relative;
   width: 1440px;
   margin:0 auto;
 }
+
+.our-adress {
+  position:absolute;
+  top: 55px;
+  left: 140px;
+  width: 319px;
+  padding-top: 27px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  background-color: #ffffff;
+}
+
+.title-modal{
+  margin-bottom:32px;
+}
+.our-adress p:first-of-type{
+  padding:0 60px;
+}
+.our-adress p:last-of-type{
+  margin-bottom: 37px;
+}
+
+.write-us-btn {
+  display: inline-block;
+  width: 219px;
+  height: 50px;
+  margin-bottom: 47px;
+  border-radius: 3px;
+  background-color: #fb565a;
+}
+
+.write-us {
+  display: block;
+  padding-top: 15px;
+  color: #ffffff;
+  font-size: 17.5px;
+  font-weight: 500;
+  line-height: 17.5px; 
+}
+
+.marker-map{
+  position:absolute;
+  top:70px;
+  left: 820px;
+  width: 231px;
+  height: 190px;
+  background-image: url(../img/map-marker.png);
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+}
+
+/* Описания всплывающего окна*/
+
 /*-----------------------------------------------------------catalog--------------------------------------------------------------*/
 .page-title-main {
   font-size: 54px;
@@ -743,8 +807,6 @@ input[type="radio"].visually-hidden {
   padding:0px;
   margin-bottom: 50px;
 }
-
-
 
 .filter-option{
   margin-left:5px;
@@ -1121,31 +1183,6 @@ input[type="radio"].visually-hidden {
 
 /* Описания основного содержимого*/
 
-/* Описания всплывающего окна*/
-
-.write-us-btn {
-  display: table-cell;
-  width: 219px;
-  height: 50px;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 3px;
-  background-color: #fb565a;
-}
-
-.write-us {
-  color: #ffffff;
-  font-size: 17.5px;
-  font-weight: 500;
-  line-height: 17.5px;
-}
-
-.our-adress {
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
-}
-
 .title-modal {
   font-size: 17.5px;
   font-weight: bold;
@@ -1172,9 +1209,6 @@ input[type="radio"].visually-hidden {
 
 /* Описания всплывающего окна*/
 
-.map {
-  min-width: 1440;
-}
 
 
 /* Описания подвала*/
