@@ -44,26 +44,25 @@ input[type="radio"].visually-hidden {
   width: 1440px;
   margin:0 auto;
   background-color: #eeeeee;
+  padding-top: 50px;
 }
 
 .index-page .main-header {
   width: 1440px;
   margin-bottom: 82px;
-  padding-top: 45px;
 }
 
 .inner-page .main-header {
   width: 1440px;
   min-height: 355px;
-  margin-bottom: 45px;
-  padding-top: 45px;
+  margin-bottom: 34px;
 }
 
 .main-container {
   width: 1200px;
   margin:0 auto;
   margin-top: 0px;
-  padding-left: 0px;
+  padding-left: 20px;
   padding-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +86,6 @@ input[type="radio"].visually-hidden {
 
 .main-logo {
   margin-right: 200px;
-  margin-left:20px;
 }
 
 .top-logo:hover {
@@ -633,7 +631,7 @@ input[type="radio"].visually-hidden {
 }
 
 .selection-form {
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 .sorting-label {
@@ -650,10 +648,11 @@ input[type="radio"].visually-hidden {
 }
 
 .main-form {
-  margin-right: 100px;
+  margin-right: 110px;
 }
 
 .form-switch{
+  width:260px;
   margin-top: 20px;
   font-size: 16px;
   line-height:20px;
@@ -670,10 +669,13 @@ input[type="radio"].visually-hidden {
   width: 260px;
 }
 
+.filter-item:nth-of-type(1) legend{
+  margin-bottom: 50px;
+}
+
 .range-filter {
-  margin-top:20px;
+  margin-top:0px;
   width: 260px;
-  margin-top: 20px;
 }
 
 .filter-item legend {
@@ -964,7 +966,7 @@ input[type="radio"].visually-hidden {
 
 .selection-list {
   width: 280px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding: 0px;
   display: flex;
   justify-content: space-between;
@@ -1219,13 +1221,8 @@ input[type="radio"].visually-hidden {
 
 /* Описания подвала*/
 
-.main-footer {
-  width: 1200px;
-  margin:0 auto;
-}
-
 .social {
-  padding-left: 20px;
+  min-width: 960px;
   display:flex;
   align-items: baseline;
   justify-content: space-between;
@@ -1236,6 +1233,9 @@ input[type="radio"].visually-hidden {
   width: 260px;
   margin-bottom: 60px;
   list-style: none;
+}
+.social .social-button{
+  padding-left: 0px;
 }
 
 .social-btn {
