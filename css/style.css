@@ -62,7 +62,6 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin:0 auto;
   margin-top: 0px;
-  padding-left: 20px;
   padding-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -183,6 +182,7 @@ input[type="radio"].visually-hidden {
 }
 .slider {
   position: relative;
+  margin-right: 50px;
   background-color: #eeeeee;
 }
 
@@ -523,6 +523,7 @@ input[type="radio"].visually-hidden {
 .long-line {
   width: 1160px;
   margin:0;
+  margin-right: 50px;
   margin-bottom: 42px;
   border: solid 1px;
   opacity: 0.2;
@@ -531,6 +532,7 @@ input[type="radio"].visually-hidden {
 .long-line-center {
   width: 1160px;
   margin:0;
+  margin-right: 50px;
   margin-bottom: 40px;
   border: solid 1px;
   opacity: 0.2;
@@ -539,6 +541,7 @@ input[type="radio"].visually-hidden {
 .long-line-bottom {
   width: 1160px;
   margin:0;
+  margin-right: 50px;
   margin-bottom: 80px;
   border: solid 1px;
   opacity: 0.2;
@@ -612,7 +615,7 @@ input[type="radio"].visually-hidden {
   margin-bottom:32px;
 }
 .our-adress p:first-of-type{
-  padding:0 60px;
+  padding:0 59px;
 }
 .our-adress p:last-of-type{
   margin-bottom: 37px;
