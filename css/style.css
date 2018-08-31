@@ -110,11 +110,14 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   width: 440px;
+  margin-right: 190px;
   padding-left:0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-right: 190px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
   list-style: none;
 }
 
@@ -144,6 +147,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
   list-style: none;
 }
 
