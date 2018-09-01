@@ -620,10 +620,12 @@ input[type="radio"].visually-hidden {
   color: #666666;
   background-color: #ffffff;
 }
-
+/*-----------!!!!!!!!!!!!!!!!!!!!!!!!!!!!----------------------*/
 .title-modal{
   margin-bottom:32px;
 }
+/*-----------!!!!!!!!!!!!!!!!!!!!!!!!!!!!----------------------*/
+
 .our-adress p:first-of-type{
   padding:0 59px;
 }
@@ -655,6 +657,7 @@ input[type="radio"].visually-hidden {
 .write-us {
   display: block;
   padding-top: 15px;
+  padding-bottom: 18px;
   color: #ffffff;
   font-size: 17.5px;
   font-weight: 500;
@@ -846,14 +849,13 @@ input[type="radio"].visually-hidden {
   display: block;
   cursor: pointer;
   user-select: none;
+  color: #283136;
 }
 
 .filter-input{
   font-size: 16px;
   line-height: 20px;
 }
-
-
 
 .filter-input-checkbox:not(:checked) + label::before {
  content: "";
@@ -881,6 +883,21 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.filter-input-checkbox:checked:hover + label::after,
+.filter-input-checkbox:checked:hover + label::before{
+  opacity: 1;
+}
+
+.filter-input-checkbox:hover + label::after,
+.filter-input-checkbox:hover + label::before{
+  opacity: 1;
+}
+
+.filter-input-checkbox:focus + label::after,
+.filter-input-checkbox:focus + label::before{
+  opacity: 1;
+}
+
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
@@ -905,17 +922,32 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.filter-input-radio:checked:hover + label::after,
+.filter-input-radio:checked:hover + label::before{
+  opacity: 1;
+}
+
+.filter-input-radio:hover + label::after,
+.filter-input-radio:hover + label::before{
+  opacity: 1;
+}
+
+.filter-input-radio:focus + label::after,
+.filter-input-radio:focus + label::before{
+  opacity: 1;
+}
+
+
 .form-switch label:hover {
   color: #000000;
 }
 
-.form-switch label:active {
-  color: rgba(40, 49, 54, 0.3);
-}
-
-.filter-input:disabled + label{
+.filter-input:disabled + label,
+.filter-input:hover:disabled + label,
+.filter-input:hover:disabled + label::before,
+.filter-input:hover:disabled + label::after{
   color: #ededed;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 .price-title {
   letter-spacing: 0.2px;
@@ -1259,8 +1291,6 @@ input[type="radio"].visually-hidden {
 
 /* Описания всплывающего окна*/
 
-
-
 /* Описания подвала*/
 
 .social {
@@ -1291,6 +1321,7 @@ input[type="radio"].visually-hidden {
   font-size:0px;
   background-color: #e1e1e1;
   border-radius:100%;
+  outline:0;
 }
 
 .social-btn:hover{
@@ -1299,6 +1330,10 @@ input[type="radio"].visually-hidden {
 
 .social-btn:active{
   background-color: #d7373b;
+}
+
+.social-btn:focus{
+  box-shadow: 0px 0px 10px #1f75fe;
 }
 
 .social-btn:active path {
@@ -1334,12 +1369,12 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-write-us {
-  
+  display: none;
   top: 50px;
-  left: 470px;
+  left: 50%;
   width: 760px;
-  margin-left: -180px;
-  padding: 65px 100px 102px 100px;;
+  margin-left: -430px;
+  padding: 65px 100px 84px 100px;;
 }
 
 .modal-close {
@@ -1352,17 +1387,19 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 0;
   cursor: pointer;
+  outline: 0;
 }
 
 .modal-close::before,
 .modal-close::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 2px;
+  top: 60px;
+  left: -70px;
   width: 19px;
   height: 3px;
   background-color: #e74246;
+  opacity: 0.3;
 }
 
 .modal-close::before {
@@ -1373,10 +1410,24 @@ input[type="radio"].visually-hidden {
   transform: rotate(-45deg);
 }
 
-/*------ описание модального окна-------*/
+.modal-close:hover::before,
+.modal-close:hover::after {
+ opacity: 1;
+}
 
+.modal-close:active::before,
+.modal-close:active::after {
+ opacity: 0.1;
+}
 
-/*----------- form ---------------*/
+.modal-close:focus::before,
+.modal-close:focus::after {
+ box-shadow: 0px 0px 10px #1f75fe;
+}
+
+/*------ описание модального окна ------*/
+
+/*------- Форма модального окна --------*/
 
 .appointment-form {
   font-size: 17.5px;
@@ -1402,48 +1453,58 @@ input[type="radio"].visually-hidden {
 }
 
 .appointment-form input {
-  width: 346px;
+  width: 326px;
   height: 46px;
   margin-top: 10px;
   border: solid 2px #d7dcde;
-  
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .appointment-form input:hover {
   border: solid 2px #b4b9bb;
 }
 
-.appointment-form input:active {
+.appointment-form input:focus {
   border: solid 2px #000000;
 }
 
+.appointment-form input:invalid {
+  border: solid 2px #e74246;
+}
+
 .appointment-item textarea{
-  width: 756px;
-  height:114px;
+  width: 726px;
+  height:84px;
   margin-bottom:12px;
-  
 }
 
 .appointment-form textarea {
   border: solid 2px #d7dcde;
   margin-top: 10px;
+  padding: 15px 15px;
 }
 
 .appointment-form textarea:hover {
   border: solid 2px #b4b9bb;
 }
 
-.appointment-form textarea:active {
+.appointment-form textarea:focus {
   border: solid 2px #000000;
 }
 
-/*----------- form ---------------*/
+.appointment-form textarea:invalid {
+  border: solid 2px #e74246;
+}
+
+/*------- Форма модального окна --------*/
 
 .sorting-title {
   font-size: 17.5px;
   font-weight: bold;
   line-height: 17.5px;
 }
+
 
 
 
