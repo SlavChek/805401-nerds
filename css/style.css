@@ -101,7 +101,7 @@ input[type="radio"].visually-hidden {
 .main-nav {
   display: flex;
   justify-content: space-between;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   color: #000000;
@@ -109,7 +109,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   width: 440px;
-  margin-right: 230px;
+  margin-right: 235px;
   padding-left:0px;
   display: flex;
   flex-wrap: wrap;
