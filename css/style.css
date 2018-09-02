@@ -109,7 +109,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   width: 440px;
-  margin-right: 240px;
+  margin-right: 235px;
   padding-left:0px;
   display: flex;
   flex-wrap: wrap;
@@ -683,7 +683,9 @@ input[type="radio"].visually-hidden {
 /*-----------------------------------------------------------catalog--------------------------------------------------------------*/
 
 .page-title-main {
-  margin-top: 25px;
+  width: 800px;
+  margin-top: 20px;
+  padding-right: 15px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
