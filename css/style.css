@@ -53,7 +53,7 @@ input[type="radio"].visually-hidden {
 
 .inner-page .main-header {
   width: 1440px;
-  padding-bottom: 55px;
+  padding-bottom: 70px;
   margin-bottom: 34px;
 }
 
@@ -127,7 +127,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-list-active a{
   border-bottom: 2px solid #fb565a;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
 }
 
 .site-navigation a:hover,
@@ -685,7 +685,7 @@ input[type="radio"].visually-hidden {
 .page-title-main {
   width: 800px;
   margin-top: 20px;
-  padding-right: 15px;
+  padding-right: 45px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
