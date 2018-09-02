@@ -347,11 +347,12 @@ input[type="radio"].visually-hidden {
 }
 
 .service-item p {
- margin-bottom: 35px;
+ margin-bottom: 30px;
 }
 
 .servise-title {
-  margin: 20px 0;
+  margin: 15px 0;
+  margin-top: 17px;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
