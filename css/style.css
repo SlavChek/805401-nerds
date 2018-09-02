@@ -450,7 +450,7 @@ input[type="radio"].visually-hidden {
 
 .lead-info{
   width: 610px;
-  margin-bottom: 41px;
+  margin-bottom: 37px;
 }
 
 .studio-info-label{
@@ -491,12 +491,13 @@ input[type="radio"].visually-hidden {
 }
 
 .big-logo {
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 .title-feautures {
   display: inline-block;
   margin-bottom:40px;
+  padding-left: 18px;
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
@@ -515,9 +516,9 @@ input[type="radio"].visually-hidden {
 
 .feauteres-percent {
   display: block;
-  margin-bottom: 45px;
-  margin-right:35px;
-  padding-top: 22px;
+  margin-bottom: 35px;
+  margin-right:18px;
+  padding-top: 20px;
   font-size: 45px;
   line-height: 10px;
   font-weight: bold;
@@ -529,7 +530,7 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin:0;
   margin-right: 50px;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
   border: solid 1px;
   opacity: 0.2;
 }
@@ -555,12 +556,13 @@ input[type="radio"].visually-hidden {
 /*описания логотипов клиентов*/
 
 .clients {
-  width: 1090px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  width: 1090px;
+  margin-right: 50px;
   margin-bottom: 42px;
-  
 }
 
 .clients-item {
@@ -591,6 +593,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 
+.client-academy{
+ 
+}
+
+.client-barbershop{
+  
+}
 /* описания логотипов клиентов*/
 
 /* Описания всплывающего окна*/
