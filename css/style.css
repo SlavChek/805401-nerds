@@ -24,7 +24,6 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -54,7 +53,7 @@ input[type="radio"].visually-hidden {
 
 .inner-page .main-header {
   width: 1440px;
-  min-height: 355px;
+  padding-bottom: 55px;
   margin-bottom: 34px;
 }
 
