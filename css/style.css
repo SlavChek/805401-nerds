@@ -696,7 +696,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price-title-box {
-  margin-right: 270px;
+  margin-right: 260px;
 }
 
 .select-container {
@@ -705,7 +705,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-form {
-  margin-right: 110px;
+  margin-right: 100px;
 }
 
 .form-switch{
@@ -946,13 +946,15 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 .price-title {
-  letter-spacing: 0.2px;
+  
 }
 
 .form-title-switch {
+  margin-top:20px;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
+  letter-spacing: 0.2px;
   color: #000000;
 }
 
@@ -990,14 +992,14 @@ input[type="radio"].visually-hidden {
 
 .sorting-up-down-list {
   display: flex;
-  margin-right: 20px;
-  padding-left: 10px;
+  margin: 16px 20px 16px 10px;
+  padding-left: 0px;
   list-style: none;
 }
 
 .sorting-up,
 .sorting-down {
-  padding-right:18px;
+  padding-right:15px;
   color: rgba(0, 0, 0, 0.3)
 }
 
@@ -1033,11 +1035,16 @@ input[type="radio"].visually-hidden {
   margin-bottom: 45px;
 }
 
+.selection-type{
+  margin-bottom: 34px;
+  margin-right: 35px;
+}
+
 .selection-list {
   width: 280px;
-  margin-bottom: 50px;
   padding: 0px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
 }
