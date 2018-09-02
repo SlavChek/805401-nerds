@@ -60,7 +60,7 @@ input[type="radio"].visually-hidden {
 .main-container {
   width: 1200px;
   margin:0 auto;
-  padding-left: 50px;
+  padding-left: 40px;
   padding-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +83,7 @@ input[type="radio"].visually-hidden {
 /*Описание состояний логотипа*/
 
 .main-logo {
-  margin-right: 200px;
+  margin-right: 147px;
 }
 
 .top-logo:hover {
@@ -109,7 +109,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   width: 440px;
-  margin-right: 190px;
+  margin-right: 240px;
   padding-left:0px;
   display: flex;
   flex-wrap: wrap;
@@ -126,7 +126,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-list-active a{
-  border-bottom: 3px solid #fb565a;
+  border-bottom: 2px solid #fb565a;
   padding-bottom: 3px;
 }
 
@@ -166,8 +166,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 15px;
   height: 15px;
-  top:3px;
-  left:16px;
+  top:2px;
+  left:10px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -683,6 +683,7 @@ input[type="radio"].visually-hidden {
 /*-----------------------------------------------------------catalog--------------------------------------------------------------*/
 
 .page-title-main {
+  margin-top: 25px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
