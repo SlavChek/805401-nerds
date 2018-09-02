@@ -604,26 +604,31 @@ input[type="radio"].visually-hidden {
   position:absolute;
   top: 55px;
   left: 140px;
-  width: 319px;
-  padding-top: 27px;
+  width: 219px;
+  padding: 50px;
   vertical-align: middle;
   text-align: center;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
+  text-align: left;
   background-color: #ffffff;
 }
-/*-----------!!!!!!!!!!!!!!!!!!!!!!!!!!!!----------------------*/
-.title-modal{
-  margin-bottom:32px;
+
+.title-our-adress{
+  margin-top:0px;
+  font-size: 17.5px;
+  font-weight: bold;
+  line-height: 31.5px;
+  color: #000000;
 }
-/*-----------!!!!!!!!!!!!!!!!!!!!!!!!!!!!----------------------*/
+
 
 .our-adress p:first-of-type{
-  padding:0 59px;
+
 }
 .our-adress p:last-of-type{
-  margin-bottom: 37px;
+ 
 }
 
 .modal-text{
@@ -635,9 +640,10 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 219px;
   height: 50px;
-  margin-bottom: 47px;
+  margin-top: 20px;
   border-radius: 3px;
   background-color: #fb565a;
+  text-align: center;
 }
 
 .write-us-btn:hover{
