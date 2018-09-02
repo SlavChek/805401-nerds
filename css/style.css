@@ -625,7 +625,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-
 .our-adress p:first-of-type{
 
 }
@@ -1305,7 +1304,7 @@ input[type="radio"].visually-hidden {
 /* Описания подвала*/
 
 .social {
-  min-width: 1150px;
+  min-width: 1200px;
   display:flex;
   align-items: baseline;
   justify-content: space-between;
@@ -1327,7 +1326,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   width:80px;
   height:80px;  
-  margin-right: 12px;
+  margin-right: 11px;
   color: #000000;
   font-size:0px;
   background-color: #e1e1e1;
@@ -1352,14 +1351,14 @@ input[type="radio"].visually-hidden {
 }
 
 .action {
-  margin-right: 230px;
+  margin-right: 257px;
   line-height: 22px;
   color: #444444;
 }
 
-
 .friendship {
-  margin-bottom:0px;
+  margin-top: 8px;
+  margin-bottom:8px;
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
@@ -1367,6 +1366,8 @@ input[type="radio"].visually-hidden {
 }
 
 .friendship-text{
+  margin-top: 8px;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 22px;
 }
