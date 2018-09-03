@@ -39,6 +39,11 @@ input[type="radio"].visually-hidden {
 
 /* Описания header*/
 
+.wrapper-header {
+  margin: 0 auto;
+  background-color: #eeeeee;
+}
+
 .main-header {
   width: 1440px;
   margin:0 auto;
@@ -599,7 +604,12 @@ input[type="radio"].visually-hidden {
 /* описания логотипов клиентов*/
 
 /* Описания всплывающего окна*/
-
+.contacts-map {
+  margin: 0 auto;
+  background-image: url(../img/map-img.png);
+  background-repeat:repeat;
+  
+}
 .map {
   position: relative;
   width: 1440px;
