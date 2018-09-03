@@ -348,12 +348,16 @@ input[type="radio"].visually-hidden {
   padding-left: 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .service-item:not(:nth-child(3n)) {
   margin-right: 100px;
   margin-bottom: 40px;
+}
+
+.service-item:nth-child(3n){
+  margin-right: 60px;
 }
 
 .service-item p {
