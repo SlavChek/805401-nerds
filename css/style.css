@@ -815,7 +815,7 @@ input[type="radio"].visually-hidden {
   width: 60px;
   padding: 8px 10px;
   margin-left: 10px;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
