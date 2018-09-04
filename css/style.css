@@ -41,7 +41,7 @@ input[type="radio"].visually-hidden {
 
 .wrapper-header {
   margin: 0 auto;
-  background-color: ;
+  background-color: #eeeeee;
 }
 
 .main-header {
@@ -595,7 +595,7 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0,0,0,0.2);
 }
 
-.clients-barbershop::after{
+.clients-barbershop::after {
   content: "";
   position: absolute;
   width: 2px;
@@ -605,7 +605,7 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0,0,0,0.2);
 }
 
-.clients-pink::after{
+.clients-pink::after {
   content: "";
   position: absolute;
   width: 2px;
@@ -652,6 +652,10 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin: 0 auto;
   margin-bottom: 45px;
+}
+
+.contacts-map iframe {
+  width: 100%;
 }
 
 .our-adress {
@@ -721,7 +725,7 @@ input[type="radio"].visually-hidden {
 .write-us:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/*
+/* местоуказатель указатель на карте
 .marker-map {
   position:absolute;
   top:90px;
