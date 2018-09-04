@@ -1610,7 +1610,7 @@ input[type="radio"].visually-hidden {
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translateY(10px);
   }
 
   90% {
