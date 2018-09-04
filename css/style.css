@@ -725,17 +725,6 @@ input[type="radio"].visually-hidden {
 .write-us:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/* местоуказатель указатель на карте
-.marker-map {
-  position:absolute;
-  top:90px;
-  left: 820px;
-  width: 231px;
-  height: 190px;
-  background-image: url(../img/map-marker.png);
-  background-repeat:no-repeat;
-  background-position:50% 50%;
-}*/
 
 /* Описания всплывающего окна*/
 
@@ -919,7 +908,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-checkbox:not(:checked) + label::before {
- content: "";
+  content: "";
   position: absolute;
   left: -35px;
   top: -2px;
@@ -1009,9 +998,6 @@ input[type="radio"].visually-hidden {
 .filter-input:hover:disabled + label::after {
   color: #ededed;
   opacity: 0.3;
-}
-.price-title {
-  
 }
 
 .form-title-switch {
@@ -1120,7 +1106,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-   margin-top: 0px;
+  margin-top: 0px;
 }
 
 .cards-item {
@@ -1496,17 +1482,17 @@ input[type="radio"].visually-hidden {
 
 .modal-close:hover::before,
 .modal-close:hover::after {
- opacity: 1;
+  opacity: 1;
 }
 
 .modal-close:active::before,
 .modal-close:active::after {
- opacity: 0.1;
+  opacity: 0.1;
 }
 
 .modal-close:focus::before,
 .modal-close:focus::after {
- box-shadow: 0px 0px 10px #e74246;
+  box-shadow: 0px 0px 10px #e74246;
 }
 
 /*------ описание модального окна ------*/
