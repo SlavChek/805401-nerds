@@ -8,8 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <div class="wrapper-header">
-    <header class="main-header">
+    <header class="wrapper-header">
+    <div class="main-header">
       <div class="main-container">
         <div class="wrapper">
       <div class="main-logo">
@@ -39,8 +39,8 @@
         <h1 class="page-title-main">Магазин готовых шаблонов</h1>
       </div>
         </div>
+      </div>
     </header>
-    </div>
     <main class="main-container">
       <div class="selection-form">
       <div class="select-container">
@@ -110,16 +110,10 @@
           </form>
         </aside>
         <section class="product-cards">
-          <div class="cards">
-            <div class="sorting-selecton">
-            <ul class="sorting-up-down-list">
-              <li>
-                <a class="sorting-up active-link" href="#">&#9660;</a>
-              </li>
-              <li>
-                <a class="sorting-down" href="#">&#9650;</a>
-              </li>
-            </ul> 
+          <div class="sorting-selections">
+            <div class="price-title-box">
+            <h2 class="form-title-switch price-title">СОРТИРОВАТЬ:</h2>
+          </div>
           <div class="selection-type">
             <ul class="selection-list">
               <li>
@@ -133,10 +127,20 @@
               </li>
             </ul>
           </div>
-          <div class="price-title-box">
-            <h2 class="form-title-switch price-title">СОРТИРОВАТЬ:</h2>
-          </div>
+            <div>
+            <ul class="sorting-up-down-list">
+              <li>
+                <a class="sorting-up active-link" href="#">&#9660;</a>
+              </li>
+              <li>
+                <a class="sorting-down" href="#">&#9650;</a>
+              </li>
+            </ul> 
+            </div>
         </div>
+          
+          
+          <div class="cards">
             <div class="cards-item cards-item-img-1">
               <div class="design-template">
                 <div class="overlay"></div>
@@ -226,20 +230,22 @@
             </ul>
           </div>
         </main>
-            <section class="contacts-map">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6395928114125!2d30.32394697022228!3d59.93812238242154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1536041090232" width="1440" height="416" style="border:0" allowfullscreen></iframe>
-          <img class="visually-hidden" src="img/map-img.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="4976" height="416">
-          <div class="our-adress">
-            <h2 class="title-our-adress">NЁRDS DESIGN STUDIO</h2>
-            <p>191186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <div class="write write-us-btn">
-              <a class="write-us" href="#">НАПИШИТЕ НАМ</a>
-            </div>
-          </div>
-          <div class="marker-map"></div>
-    </section>
+                 <section class="contacts-map">
+<div class="main-container map-container">
+<div class="our-adress">
+<h2 class="title-our-adress">NЁRDS DESIGN STUDIO</h2>
+<p>191186, Санкт-Петербург,<br>
+ул. Б. Конюшенная, д. 19/8</p>
+<p>тел. +7 (812) 275-75-75</p>
+<div class="write write-us-btn">
+<a class="write-us" href="#">НАПИШИТЕ НАМ</a>
+</div>
+</div>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6395928114125!2d30.32394697022228!3d59.93812238242154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1536041090232" width="4000" height="416" style="border:0" allowfullscreen></iframe>
+<img class="visually-hidden" src="img/map-img.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1440" height="416">
+<div class="marker-map"></div>
+</section>
            <footer class="main-container">
              <div class="social">
                  <ul class="social-button">

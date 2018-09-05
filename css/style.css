@@ -1,6 +1,6 @@
 /* Описания общих состояний*/
 body {
-  min-width: 1440px;
+  
   margin: 0;
   padding:  0;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -45,19 +45,18 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  width: 1440px;
-  margin:0 auto;
+  
   background-color: #eeeeee;
   padding-top: 50px;
 }
 
 .index-page .main-header {
-  width: 1440px;
+ 
   margin-bottom: 80px;
 }
 
 .inner-page .main-header {
-  width: 1440px;
+  
   padding-bottom: 70px;
   margin-bottom: 34px;
 }
@@ -130,7 +129,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-list-active a {
   border-bottom: 2px solid #fb565a;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .site-navigation a:hover,
@@ -649,9 +648,12 @@ input[type="radio"].visually-hidden {
 
 
 .contacts-map {
-  position: relative;
   margin: 0 auto;
   margin-bottom: 45px;
+}
+
+.map-container {
+  position: relative;
 }
 
 .contacts-map iframe {
@@ -660,8 +662,8 @@ input[type="radio"].visually-hidden {
 
 .our-adress {
   position:absolute;
-  top: 55px;
-  left: 300px;
+  top: 54px;
+  left: 20px;
   width: 219px;
   padding: 50px;
   padding-top: 48px;
@@ -681,13 +683,6 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   line-height: 31.5px;
   color: #000000;
-}
-
-.our-adress p:first-of-type {
-
-}
-.our-adress p:last-of-type {
- 
 }
 
 .modal-text {
@@ -745,12 +740,8 @@ input[type="radio"].visually-hidden {
   padding-left: 0px;
 }
 
-.sorting-label {
-  flex-grow: 2;
-}
-
 .price-title-box {
-  margin-right: 260px;
+  margin-right: 263px;
 }
 
 .select-container {
@@ -1009,6 +1000,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.selection-type {
+  width: 275px;
+}
+
 .button-show {
   width: 260px;
   height: 50px;
@@ -1030,28 +1025,38 @@ input[type="radio"].visually-hidden {
   background-color: #d5d5d5;
 }
 
+.product-cards{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: center;
+}
+
 /*-------- список выбора над карточками товара--------------------*/
 
-.sorting-selecton {
+.sorting-selections {
   display: flex;
-  flex-direction: row-reverse;
   align-items: baseline;
-  justify-content: center;
-  width: 620px;
-  margin-left:130px;
+  justify-content: flex-end;
+  width: 760px;
+  margin-left: 40px;
 }
 
 .sorting-up-down-list {
   display: flex;
-  margin: 16px 20px 16px 10px;
+  margin: 16px 0px 16px 10px;
   padding-left: 0px;
   list-style: none;
 }
 
 .sorting-up,
 .sorting-down {
-  padding-right:15px;
+  padding-right: 10px;
   color: rgba(0, 0, 0, 0.3)
+}
+
+.sorting-down {
+  padding-right: 0px;
 }
 
 .sorting-up:hover,
@@ -1103,6 +1108,7 @@ input[type="radio"].visually-hidden {
 /*-------- список выбора над карточками товара--------------------*/
 
 .cards {
+  width: 800px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
