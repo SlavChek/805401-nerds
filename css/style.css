@@ -1257,6 +1257,11 @@ input[type="radio"].visually-hidden {
 }
 
 /*Описание цифрового элемента выбора страниц */
+
+.pagination {
+  width: 800px;
+}
+
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
