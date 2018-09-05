@@ -1026,6 +1026,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   align-items: stretch;
   align-content: center;
+  width: 800px;
   margin-bottom: 22px;
 }
 
