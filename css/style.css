@@ -1261,6 +1261,15 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
 }
 
+.text-wrap {
+  width: 225px;
+  height: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  overflow: hidden;
+  column-count: 1;
+}
+
 .template-kvast {
   position: absolute;
   top: 385px;
