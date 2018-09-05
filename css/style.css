@@ -1095,6 +1095,10 @@ input[type="radio"].visually-hidden {
   margin-right: 35px;
 }
 
+.selection-type li:last-of-type {
+  margin-right: 8px;
+}
+
 .selection-list {
   width: 280px;
   padding: 0px;
