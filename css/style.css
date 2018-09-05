@@ -1,6 +1,5 @@
 /* Описания общих состояний*/
 body {
-  
   margin: 0;
   padding:  0;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -45,18 +44,15 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  
   background-color: #eeeeee;
   padding-top: 50px;
 }
 
 .index-page .main-header {
- 
   margin-bottom: 80px;
 }
 
 .inner-page .main-header {
-  
   padding-bottom: 70px;
   margin-bottom: 34px;
 }
@@ -1030,6 +1026,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   align-items: stretch;
   align-content: center;
+  margin-bottom: 22px;
 }
 
 /*-------- список выбора над карточками товара--------------------*/
@@ -1112,7 +1109,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-top: 0px;
+  margin-bottom:6px;
 }
 
 .cards-item {
@@ -1262,8 +1259,6 @@ input[type="radio"].visually-hidden {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 400px;
-  margin-bottom: 60px;
   list-style: none;
 }
 
