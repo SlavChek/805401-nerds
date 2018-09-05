@@ -513,6 +513,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-wrapper {
+  width: 345.5px;
   display: flex; 
   margin-right: 40px;
 }
