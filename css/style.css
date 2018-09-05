@@ -737,7 +737,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price-title-box {
-  margin-right: 263px;
+  margin-right: 260px;
 }
 
 .select-container {
@@ -1033,6 +1033,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-selections {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: flex-end;
   width: 760px;
