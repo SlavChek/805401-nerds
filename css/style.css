@@ -1258,19 +1258,17 @@ input[type="radio"].visually-hidden {
 }
 
 .template p {
-  min-height: 200px;
+  width: 230px;
+  height: 60px;
   margin: 0;
-  margin-bottom: 10px;
+  overflow: auto;
 }
 
 .text-wrap {
-  width: 230px;
-  height: 200px;
   margin-bottom: 10px;
   text-align: center;
-  overflow: hidden;
-  -webkit-column-count: 1;
-          column-count: 1;
+  
+  
 }
 
 .template-kvast {
@@ -1856,7 +1854,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* Тряска окна при ошибке */
-
 
 
 
